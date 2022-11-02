@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    background: rgb(244, 243, 243);
+}
+
+.logo img{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.nav{
+    background: purple;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li{
+    color: white;
+    display: block;
+    padding: 1.2em;
+    text-align: center;
+}
+
+.nav ul li:hover{
+    background: rgba(128,128,128,0.65);
+}
+
+.conteudo{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: auto;
+}
+
+.conteudo img{
+    visibility: hidden;
+    overflow: hidden;
+    width: 0.1px;
+    height: 0.1px;
+}
+
+.botao{
+    display: block;
+    background: rgb(104, 209, 174);
+    width: 13em;
+    height: 3em;
+    border-radius: .6em;
+    line-height: 3em;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.botao:hover{
+    background: rgba(86, 173, 144, 0.7);
+}
+
+.conteudo .botao{
+    margin: auto;
+}
+
+.conteudo h1, p{
+    color: purple;
+}
+
+.info{
+    text-align: center;
+    width: 90%;
+    margin: 40px auto 40px auto;
+}
+
+h2{
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: purple;
+    font-size: 22px;
+}
+
+.info p, .final p{
+    color: black;
+    line-height: 2;
+}
+
+.final article{
+    width: 90%;
+    margin: 80px 0 30px 5%;
+}
+
+footer{
+    margin-top: 50px;
+    background: rgb(60, 65, 75);
+    text-align: center;
+    color: rgb(130, 136, 147);
+    padding-bottom: 50px;
+}
+
+footer header{
+    background: rgb(42, 45, 51);
+    margin: 0;
+}
+
+footer .redes{
+    width: 135px;
+    margin:auto;
+}
+
+footer p{
+    color: rgb(130, 136, 147);
+}
+
+@media screen and (min-width:800px){
+
+    .nav ul li:hover{
+        background: none;
+    }
+
+    .logo ul li{
+        display: inline-block;
+        color: purple;
+        padding: .5em;
+        margin: .5em;
+
+    }
+
+    .nav{
+        background: none;
+        float: right;
+    }
+
+    .logo img{
+        width: 20%;
+        height: 60px;
+        display: block;
+        float: left;
+    }
+
+    
+
+
+
+    .conteudo{
+        background: purple;
+        padding: 40px 0 20px 0;
+        clear: both;
+    }
+
+    .conteudo p{
+        color: white;
+    }
+
+    .conteudo h1{
+        color: white;
+    }
+
+    .conteudo img{
+        visibility: visible;
+        width: 100px;
+        height: 100px;
+    }
+
+    .info{
+        width: 40%;
+        margin-left: 5%;
+        float: left;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .conteudo{
+        background-image: url('../images/bg_topo_1198x670.jpg');
+        padding-top: 300px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .conteudo{
+        background-image: url('../images/bg_topo_1600x1374.jpg');
+        padding-bottom: 200px;
+    }
+
+    .info{
+        width: 18%;
+        margin-left: 5%;
+        float: left;
+    }
+
+    .final article{
+        width: 40%;
+        margin-left: 5%;
+        float: left;
+    }
+
+    .final{
+        clear: both;
+    }
+
+    footer{
+        clear: both;
+    }
+}
